@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ru.laguna-pools.mcp/pools",
+  "title": "Laguna Pools",
+  "description": "AI sales manager for composite swimming pools — recommendations, pricing, BIM/CAD, dealers",
+  "repository": {
+    "url": "https://github.com/lagunapools/laguna-pools-mcp",
+    "source": "github"
+  },
+  "version": "2.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.laguna-pools.ru/api/mcp/"
+    }
+  ]
+}
