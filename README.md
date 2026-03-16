@@ -6,6 +6,8 @@
 [![JSON-RPC](https://img.shields.io/badge/Protocol-JSON--RPC%202.0-green)](https://www.jsonrpc.org)
 [![Tools](https://img.shields.io/badge/Tools-14-orange)](https://mcp.laguna-pools.ru/api/mcp/)
 
+[![laguna-pools-mcp MCP server](https://glama.ai/mcp/servers/lagunapools/laguna-pools-mcp/badges/card.svg)](https://glama.ai/mcp/servers/lagunapools/laguna-pools-mcp)
+
 ## Что это?
 
 MCP (Model Context Protocol) сервер, который превращает AI-ассистента в профессионального менеджера по продаже бассейнов Laguna Pools. Архитекторы, дизайнеры и частные клиенты получают:
