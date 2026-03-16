@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "server": {
+    "name": "laguna-pools",
+    "version": "2.0.0",
+    "description": "Laguna Pools — AI-менеджер по продаже композитных бассейнов. Подбор по параметрам участка, расчёт «под ключ», BIM/CAD для архитекторов, заявка дилеру. 8 моделей (2.0–9.4 м), 175 городов России.",
+    "url": "https://mcp.laguna-pools.ru/api/mcp/",
+    "protocol": "json-rpc-2.0",
+    "transport": "http"
+  },
+  "tools": [
+    {"name": "recommend_pool", "description": "AI-менеджер: подбор бассейна по размерам участка, назначению, бюджету, климату"},
+    {"name": "calculate_total", "description": "Калькулятор «под ключ»: бассейн + фильтрация + покрывало + камень + мебель"},
+    {"name": "submit_lead", "description": "Отправить заявку дилеру — клиент получит обратный звонок"},
+    {"name": "search_pools", "description": "Поиск бассейнов по размерам, бюджету, типу, климату"},
+    {"name": "get_pool_specs", "description": "Характеристики модели: размеры, объём, вес, серии, гарантия"},
+    {"name": "get_pool_price", "description": "Цены серий PREMIUM и PREMIUM NORD"},
+    {"name": "get_bim_files", "description": "BIM/CAD: DWG (AutoCAD), OBJ (3D), RFA (Revit), 3DS"},
+    {"name": "find_dealer", "description": "Дилер в городе (175 городов России)"},
+    {"name": "get_repair_services", "description": "Ремонт бассейнов, покрытия ecoFINISH"},
+    {"name": "get_furniture", "description": "Композитная мебель: лежаки, лавочки, столешницы"},
+    {"name": "get_slides", "description": "Горки и водопады для бассейнов"},
+    {"name": "get_filters", "description": "Фильтрационные установки LPF (400–900 мм)"},
+    {"name": "get_accessories", "description": "Покрывала, LagunaBox, Hot Tub"}
+  ],
+  "categories": ["swimming-pools", "construction", "architecture", "bim-cad", "home-improvement", "sales", "consulting"],
+  "languages": ["ru", "en"],
+  "contact": {
+    "phone": "8 (800) 222-64-08",
+    "email": "art-online-shop@yandex.ru",
+    "website": "https://laguna-pools.ru"
+  }
+}
