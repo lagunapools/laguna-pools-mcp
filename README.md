@@ -2,9 +2,11 @@
 
 **AI-менеджер по продаже композитных бассейнов** — MCP сервер для интеграции с Claude Desktop, Cursor, ChatGPT и другими AI-ассистентами.
 
-[![MCP](https://img.shields.io/badge/MCP-2024--11--05-blue)](https://modelcontextprotocol.io)
+[![MCP](https://img.shields.io/badge/MCP-2025--03--26-blue)](https://modelcontextprotocol.io)
 [![JSON-RPC](https://img.shields.io/badge/Protocol-JSON--RPC%202.0-green)](https://www.jsonrpc.org)
 [![Tools](https://img.shields.io/badge/Tools-14-orange)](https://mcp.laguna-pools.ru/api/mcp/)
+[![Resources](https://img.shields.io/badge/Resources-3-purple)](https://mcp.laguna-pools.ru/api/mcp/)
+[![Prompts](https://img.shields.io/badge/Prompts-2-teal)](https://mcp.laguna-pools.ru/api/mcp/)
 
 ## Что это?
 
@@ -144,15 +146,57 @@ AI вызовет `get_bim_files`:
 
 Две серии: **PREMIUM** (стандарт) и **PREMIUM NORD** (утепление Frozen Guard для холодного климата до -40°C).
 
+## Ресурсы (Resources)
+
+Сервер предоставляет 3 ресурса для чтения данных:
+
+| URI | Описание |
+|-----|----------|
+| `laguna://catalog/pools` | Каталог всех моделей бассейнов (размеры, вес, объём) |
+| `laguna://catalog/prices` | Прайс-лист на все товары из базы данных |
+| `laguna://dealers` | Список дилеров с городами и контактами |
+
+Шаблоны URI:
+- `laguna://pool/{model}` — спецификация конкретной модели (laguna2..laguna9)
+- `laguna://dealer/{city}` — дилер в конкретном городе
+
+## Промпты (Prompts)
+
+| Промпт | Описание |
+|--------|----------|
+| `recommend_pool` | Подбор бассейна: город, кол-во человек, назначение, бюджет |
+| `calculate_project` | Расчёт проекта «под ключ»: модель, серия |
+
 ## Технические детали
 
-- **Протокол:** JSON-RPC 2.0 (MCP 2024-11-05)
+- **Протокол:** JSON-RPC 2.0 (MCP 2025-03-26)
+- **Версия сервера:** 2.1.0
 - **Транспорт:** HTTP/HTTPS
 - **Endpoint:** `https://mcp.laguna-pools.ru/api/mcp/`
 - **Discovery:** `https://mcp.laguna-pools.ru/.well-known/mcp.json`
 - **REST:** `https://mcp.laguna-pools.ru/api/mcp/?tool={name}&param=value`
+- **Capabilities:** tools, resources, prompts, logging
 - **Цены:** реальные, из базы данных, обновляются ежедневно
 - **Дилеры:** 175 городов России
+
+### Поддерживаемые MCP-методы
+
+| Метод | Описание |
+|-------|----------|
+| `initialize` | Инициализация сервера, capabilities |
+| `ping` | Проверка доступности |
+| `notifications/initialized` | Подтверждение инициализации |
+| `tools/list` | Список инструментов (14) |
+| `tools/call` | Вызов инструмента |
+| `resources/list` | Список ресурсов (3) |
+| `resources/read` | Чтение ресурса по URI |
+| `resources/templates/list` | Шаблоны URI |
+| `prompts/list` | Список промптов (2) |
+| `prompts/get` | Получение промпта с аргументами |
+| `completion/complete` | Автодополнение |
+| `logging/setLevel` | Уровень логирования |
+| `roots/list` | Корневые URI |
+| `shutdown` | Завершение |
 
 ## REST API
 
