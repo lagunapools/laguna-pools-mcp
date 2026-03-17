@@ -226,3 +226,19 @@ curl "https://mcp.laguna-pools.ru/api/mcp/?tool=get_bim_files&model=laguna8"
 ## Лицензия
 
 MIT
+
+### Паспорт бассейна (новое в v2.1.0)
+
+| Инструмент | Описание |
+|-----------|----------|
+| `get_pool_passport` | Официальное руководство по установке, эксплуатации, уходу, химии, консервации |
+
+Разделы: `about`, `delivery`, `installation`, `drainage`, `equipment`, `water`, `care`, `winter`, `spring`, `tolerances`, `accessories`, `all`
+
+```bash
+# Как консервировать бассейн на зиму?
+curl "https://mcp.laguna-pools.ru/api/mcp/?tool=get_pool_passport&section=winter"
+
+# Вся водоподготовка
+curl "https://mcp.laguna-pools.ru/api/mcp/?tool=get_pool_passport&section=water"
+```
