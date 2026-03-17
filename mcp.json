@@ -9,22 +9,76 @@
     "transport": "http"
   },
   "tools": [
-    {"name": "recommend_pool", "description": "AI-менеджер: подбор бассейна по размерам участка, назначению, бюджету, климату"},
-    {"name": "calculate_total", "description": "Калькулятор «под ключ»: бассейн + фильтрация + покрывало + камень + мебель"},
-    {"name": "submit_lead", "description": "Отправить заявку дилеру — клиент получит обратный звонок"},
-    {"name": "search_pools", "description": "Поиск бассейнов по размерам, бюджету, типу, климату"},
-    {"name": "get_pool_specs", "description": "Характеристики модели: размеры, объём, вес, серии, гарантия"},
-    {"name": "get_pool_price", "description": "Цены серий PREMIUM и PREMIUM NORD"},
-    {"name": "get_bim_files", "description": "BIM/CAD: DWG (AutoCAD), OBJ (3D), RFA (Revit), 3DS"},
-    {"name": "find_dealer", "description": "Дилер в городе (175 городов России)"},
-    {"name": "get_repair_services", "description": "Ремонт бассейнов, покрытия ecoFINISH"},
-    {"name": "get_furniture", "description": "Композитная мебель: лежаки, лавочки, столешницы"},
-    {"name": "get_slides", "description": "Горки и водопады для бассейнов"},
-    {"name": "get_filters", "description": "Фильтрационные установки LPF (400–900 мм)"},
-    {"name": "get_accessories", "description": "Покрывала, LagunaBox, Hot Tub"}
+    {
+      "name": "recommend_pool",
+      "description": "AI-менеджер: подбор бассейна по размерам участка, назначению, бюджету, климату"
+    },
+    {
+      "name": "calculate_total",
+      "description": "Калькулятор «под ключ»: бассейн + фильтрация + покрывало + камень + мебель"
+    },
+    {
+      "name": "submit_lead",
+      "description": "Отправить заявку дилеру — клиент получит обратный звонок"
+    },
+    {
+      "name": "search_pools",
+      "description": "Поиск бассейнов по размерам, бюджету, типу, климату"
+    },
+    {
+      "name": "get_pool_specs",
+      "description": "Характеристики модели: размеры, объём, вес, серии, гарантия"
+    },
+    {
+      "name": "get_pool_price",
+      "description": "Цены серий PREMIUM и PREMIUM NORD"
+    },
+    {
+      "name": "get_bim_files",
+      "description": "BIM/CAD: DWG (AutoCAD), OBJ (3D), RFA (Revit), 3DS"
+    },
+    {
+      "name": "find_dealer",
+      "description": "Дилер в городе (175 городов России)"
+    },
+    {
+      "name": "get_repair_services",
+      "description": "Ремонт бассейнов, покрытия ecoFINISH"
+    },
+    {
+      "name": "get_furniture",
+      "description": "Композитная мебель: лежаки, лавочки, столешницы"
+    },
+    {
+      "name": "get_slides",
+      "description": "Горки и водопады для бассейнов"
+    },
+    {
+      "name": "get_filters",
+      "description": "Фильтрационные установки LPF (400–900 мм)"
+    },
+    {
+      "name": "get_accessories",
+      "description": "Покрывала, LagunaBox, Hot Tub"
+    },
+    {
+      "name": "get_pool_passport",
+      "description": "Паспорт бассейна: установка, эксплуатация, консервация, уход, водоподготовка. Официальное руководство"
+    }
   ],
-  "categories": ["swimming-pools", "construction", "architecture", "bim-cad", "home-improvement", "sales", "consulting"],
-  "languages": ["ru", "en"],
+  "categories": [
+    "swimming-pools",
+    "construction",
+    "architecture",
+    "bim-cad",
+    "home-improvement",
+    "sales",
+    "consulting"
+  ],
+  "languages": [
+    "ru",
+    "en"
+  ],
   "contact": {
     "phone": "8 (800) 222-64-08",
     "email": "art-online-shop@yandex.ru",
